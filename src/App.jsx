@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/mobile/Home'
 import Platform from 'react-platform-js'
 import Layout from './pages/mobile/Layout'
+import CreateRide from './pages/mobile/CreateRide'
 
 export default function App() {
 	return (
@@ -13,7 +14,7 @@ export default function App() {
 				<Routes>
 					<Route path="/" element={<Layout />}>
 						<Route index element={<Home />} />
-						<Route path='/date' element="Date" />
+						<Route path='/createRide' element={<CreateRide />} />
 					</Route>
 				</Routes>
 				:

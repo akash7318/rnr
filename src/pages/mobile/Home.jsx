@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom"
+
 function Home() {
 	return (
 		<div className="w-full">
-			<img src="./rnr_logo.png" alt="Rent & Ride" title="Rent & Ride" className='m-auto mt-2' />
+			<img src="./rnr_logo.png" alt="Rent & Ride" title="Rent & Ride" className='m-auto mt-3' />
 			<div className="w-full h-10 border border-gray-500 rounded-full my-6 flex items-center">
 				<img src="./icons/search.png" alt="Search" className="h-5 px-4" />
 				<input type="text" placeholder="Search anything" className="w-full outline-none rounded-full h-full px-1" />
@@ -103,18 +105,18 @@ function Home() {
 					</div>
 				</div>
 			</div>
-			<div className="h-16 bg-[#FF6E01] rounded-2xl mt-6 px-5 flex items-center justify-between">
+			<Link className="w-full h-16 bg-[#FF6E01] rounded-2xl mt-6 px-5 flex items-center justify-between">
 				<p className="text-white text-base fontSuperRetroItalic">RECEIVE</p>
 				<p className="text-white"><span className="font-semibold mr-1">15</span>incoming</p>
-			</div>
-			<div className="h-16 bg-[#FF0D00] rounded-2xl mt-6 px-5 flex items-center justify-between">
+			</Link>
+			<Link className="w-full h-16 bg-[#FF0D00] rounded-2xl mt-6 px-5 flex items-center justify-between">
 				<p className="text-white text-base fontSuperRetroItalic">HANDOVER</p>
 				<p className="text-white"><span className="font-semibold mr-1">10</span>outgoing</p>
-			</div>
-			<div className="h-16 bg-black rounded-2xl mt-6 px-5 flex items-center justify-between">
-				<p className="text-white text-base fontSuperRetroItalic">CREATE Ride</p>
+			</Link>
+			<Link to={'/createRide'} className="w-full h-16 bg-black rounded-2xl mt-6 px-5 flex items-center justify-between">
+				<p className="text-white text-base fontSuperRetroItalic">CREATE RIDE</p>
 				<p className="text-white"><span className="font-semibold mr-1">05</span>available</p>
-			</div>
+			</Link>
 		</div>
 	)
 }

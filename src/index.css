@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'Super Retro Italic';
-  src: url('../public/fonts/super_retro_m54/Super Retro Italic M54.ttf') format('truetype'),
+  src: url('/fonts/super_retro_m54/Super Retro Italic M54.ttf') format('truetype'),
 }
 
 body {
@@ -13,4 +13,12 @@ body {
 
 .fontSuperRetroItalic {
   font-family: "Super Retro Italic";
+}
+
+.rdrInRange, .rdrStartEdge, .rdrEndEdge {
+  background-color: #FF0000 !important;
+}
+
+.rdrDateDisplayWrapper {
+  background-color: transparent;
 }
