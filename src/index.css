@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Super Retro Italic';
+  src: url('../public/fonts/super_retro_m54/Super Retro Italic M54.ttf') format('truetype'),
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+}
+
+.fontSuperRetroItalic {
+  font-family: "Super Retro Italic";
+}
