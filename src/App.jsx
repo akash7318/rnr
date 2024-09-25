@@ -3,6 +3,7 @@ import Home from './pages/mobile/Home'
 import Platform from 'react-platform-js'
 import Layout from './pages/mobile/Layout'
 import CreateRide from './pages/mobile/CreateRide'
+import Vehicles from './pages/mobile/Vehicles'
 
 export default function App() {
 	return (
@@ -15,6 +16,7 @@ export default function App() {
 					<Route path="/" element={<Layout />}>
 						<Route index element={<Home />} />
 						<Route path='/createRide' element={<CreateRide />} />
+						<Route path='/vehicles' element={<Vehicles />} />
 					</Route>
 				</Routes>
 				:

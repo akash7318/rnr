@@ -22,3 +22,8 @@ body {
 .rdrDateDisplayWrapper {
   background-color: transparent;
 }
+
+.swiper-slide-active {
+  font-size: medium !important;
+  color: #000;
+}

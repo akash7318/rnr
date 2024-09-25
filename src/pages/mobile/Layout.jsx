@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom"
 
 function Layout() {
     return (
-        <main className="w-screen h-screen p-6">
+        <main className="w-screen h-screen p-6 bg-[#FAFAFA]">
             <div className="flex justify-between">
                 <div className="flex gap-2">
                     <div className="w-3 h-3 rounded-full bg-black"></div>
