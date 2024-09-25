@@ -65,10 +65,10 @@ function CreateRide() {
                         </label>
                     </div>
                 </div>
-                <button type='submit' className='flex justify-between items-center p-6 fixed left-0 bottom-0 w-full rounded-t-2xl bg-[#FF0000]'>
+                <Link to={'/vehicles'} className='flex justify-between items-center p-6 fixed left-0 bottom-0 w-full rounded-t-2xl bg-[#FF0000]'>
                     <p className='text-white fontSuperRetroItalic'>Proceed</p>
                     <img src="./icons/proceed-arrow.png" alt="Proceed" />
-                </button>
+                </Link>
             </form>
         </div>
     )
